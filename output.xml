@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.9.13 on win32)" generated="2025-03-10T17:07:43.591278" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginKompas" source="C:\Robot-Framework\LoginKompas.robot">
+<test id="s1-t1" name="robotframework-testing_selenium" line="9">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:07:47.154426" level="INFO">Opening browser 'chrome' to base url 'https://www.kompas.com/'.</msg>
+<arg>https://www.kompas.com/</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-10T17:07:47.153429" elapsed="38.056648"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${SELSPEED}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-03-10T17:08:25.211075" elapsed="0.001155"/>
+</kw>
+<arg>Open Browser</arg>
+<arg>https://www.kompas.com/</arg>
+<arg>${BROWSER}</arg>
+<arg>AND</arg>
+<arg>Set Selenium Speed</arg>
+<arg>${SELSPEED}</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-03-10T17:07:47.152432" elapsed="38.060304"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:08:25.217729" level="INFO">Clicking element 'id=sso__icon__login_top'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-10T17:08:25.214735" elapsed="0.451562"/>
+</kw>
+<arg>id=sso__icon__login_top</arg>
+<status status="PASS" start="2025-03-10T17:08:25.213738" elapsed="0.452559"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:08:25.668296" level="INFO">Clicking element 'xpath=//a[@id='txt_signin']/span'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-10T17:08:25.667299" elapsed="2.042394"/>
+</kw>
+<arg>xpath=//a[@id='txt_signin']/span</arg>
+<status status="PASS" start="2025-03-10T17:08:25.666297" elapsed="2.043396"/>
+</kw>
+<kw name="open">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:08:27.711686" level="INFO">Opening url 'https://account.kompas.com/login/a29tcGFz/aHR0cHM6Ly93d3cua29tcGFzLmNvbS8='</msg>
+<arg>${element}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-03-10T17:08:27.711686" elapsed="0.675505"/>
+</kw>
+<arg>https://account.kompas.com/login/a29tcGFz/aHR0cHM6Ly93d3cua29tcGFzLmNvbS8=</arg>
+<status status="PASS" start="2025-03-10T17:08:27.710691" elapsed="0.676500"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:08:28.389186" level="INFO">Clicking element 'id=email'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-10T17:08:28.388189" elapsed="0.170035"/>
+</kw>
+<arg>id=email</arg>
+<status status="PASS" start="2025-03-10T17:08:28.388189" elapsed="0.171032"/>
+</kw>
+<kw name="type">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:08:28.560218" level="INFO">Typing text 'geo12619@gmail.com' into text field 'id=email'.</msg>
+<arg>${element}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-10T17:08:28.560218" elapsed="0.126382"/>
+</kw>
+<arg>id=email</arg>
+<arg>geo12619@gmail.com</arg>
+<status status="PASS" start="2025-03-10T17:08:28.559221" elapsed="0.127379"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:08:28.688596" level="INFO">Clicking element 'id=password'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-10T17:08:28.688596" elapsed="0.224153"/>
+</kw>
+<arg>id=password</arg>
+<status status="PASS" start="2025-03-10T17:08:28.687596" elapsed="0.226151"/>
+</kw>
+<kw name="type">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:08:28.917736" level="INFO">Typing text 'Naxuta123' into text field 'id=password'.</msg>
+<arg>${element}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-10T17:08:28.916743" elapsed="0.101734"/>
+</kw>
+<arg>id=password</arg>
+<arg>Naxuta123</arg>
+<status status="PASS" start="2025-03-10T17:08:28.914749" elapsed="0.103728"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:08:29.020471" level="INFO">Clicking element 'xpath=//input[@value='Login']'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-10T17:08:29.020471" elapsed="21.610402"/>
+</kw>
+<arg>xpath=//input[@value='Login']</arg>
+<status status="PASS" start="2025-03-10T17:08:29.019473" elapsed="21.611400"/>
+</kw>
+<kw name="open">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:08:50.632870" level="INFO">Opening url 'https://account.kompas.com/signin'</msg>
+<arg>${element}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-03-10T17:08:50.632870" elapsed="0.418294"/>
+</kw>
+<arg>https://account.kompas.com/signin</arg>
+<status status="PASS" start="2025-03-10T17:08:50.631870" elapsed="0.420291"/>
+</kw>
+<kw name="open">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:08:51.053158" level="INFO">Opening url 'https://account.kompas.com/sukses?cont=aHR0cHM6Ly93d3cua29tcGFzLmNvbS8/bGduX21ldGhvZD1rb21wYXNpZA=='</msg>
+<arg>${element}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-03-10T17:08:51.053158" elapsed="0.517951"/>
+</kw>
+<arg>https://account.kompas.com/sukses?cont=aHR0cHM6Ly93d3cua29tcGFzLmNvbS8/bGduX21ldGhvZD1rb21wYXNpZA==</arg>
+<status status="PASS" start="2025-03-10T17:08:51.052161" elapsed="0.519533"/>
+</kw>
+<kw name="open">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:08:51.573974" level="INFO">Opening url 'https://www.kompas.com/?lgn_method=kompasid'</msg>
+<arg>${element}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-03-10T17:08:51.572877" elapsed="30.260472"/>
+</kw>
+<arg>https://www.kompas.com/?lgn_method=kompasid</arg>
+<status status="PASS" start="2025-03-10T17:08:51.572270" elapsed="30.261079"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:09:21.836338" level="INFO">Clicking element 'id=sso__icon__login_top'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-10T17:09:21.835343" elapsed="0.361475"/>
+</kw>
+<arg>id=sso__icon__login_top</arg>
+<status status="PASS" start="2025-03-10T17:09:21.834344" elapsed="0.363472"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:09:22.198813" level="INFO">Clicking element 'xpath=//li[@id='sso__item']/a/span/div/div'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-10T17:09:22.198813" elapsed="1.219973"/>
+</kw>
+<arg>xpath=//li[@id='sso__item']/a/span/div/div</arg>
+<status status="PASS" start="2025-03-10T17:09:22.197816" elapsed="1.220970"/>
+</kw>
+<kw name="open">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:09:23.420335" level="INFO">Opening url 'https://account.kompas.com/home?navsource=aHR0cHM6Ly93d3cua29tcGFzLmNvbS8/bGduX21ldGhvZD1rb21wYXNpZA=='</msg>
+<arg>${element}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-03-10T17:09:23.420335" elapsed="0.817235"/>
+</kw>
+<arg>https://account.kompas.com/home?navsource=aHR0cHM6Ly93d3cua29tcGFzLmNvbS8/bGduX21ldGhvZD1rb21wYXNpZA==</arg>
+<status status="PASS" start="2025-03-10T17:09:23.419333" elapsed="0.818237"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:09:24.239563" level="INFO">Clicking element 'xpath=//button[@type='button']'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-10T17:09:24.238565" elapsed="0.153500"/>
+</kw>
+<arg>xpath=//button[@type='button']</arg>
+<status status="PASS" start="2025-03-10T17:09:24.238565" elapsed="0.153500"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:09:24.394059" level="INFO">Clicking element 'link=Logout'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-10T17:09:24.394059" elapsed="0.133762"/>
+</kw>
+<arg>link=Logout</arg>
+<status status="PASS" start="2025-03-10T17:09:24.393062" elapsed="0.134759"/>
+</kw>
+<kw name="click">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:09:24.529847" level="INFO">Clicking element 'xpath=//a[@onclick='google.accounts.id.disableAutoSelect(); return true;']'.</msg>
+<arg>${element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-10T17:09:24.529847" elapsed="0.758107"/>
+</kw>
+<arg>xpath=//a[@onclick='google.accounts.id.disableAutoSelect(); return true;']</arg>
+<status status="PASS" start="2025-03-10T17:09:24.528820" elapsed="0.759134"/>
+</kw>
+<kw name="open">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:09:25.290946" level="INFO">Opening url 'https://account.kompas.com/logout/WWxaT01GSnJPVzVsVnpSM1ltMHhORTR3Um0xTlV6bEdZMnQ0TUdFeVRqRmhhWFJ5WlVSamQxUkliRVpTVlVaVldXdHZNbFJWTVd4YWFrNXhZVE5OTTFVd05WQlRWVEI2Vlc1R1lXRlZlRVJXUm1odlVWUlpNRkZVYUVkVk0yOHdZMnRrTUZkSVZrVmpWRW95V1cwNWFGVXlZemxRVVQwOQ==/aHR0cHM6Ly93d3cua29tcGFzLmNvbT9sZ25fbWV0aG9kPWtvbXBhc2lkJmw9Yw==?revoke=active'</msg>
+<arg>${element}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-03-10T17:09:25.289951" elapsed="0.569665"/>
+</kw>
+<arg>https://account.kompas.com/logout/WWxaT01GSnJPVzVsVnpSM1ltMHhORTR3Um0xTlV6bEdZMnQ0TUdFeVRqRmhhWFJ5WlVSamQxUkliRVpTVlVaVldXdHZNbFJWTVd4YWFrNXhZVE5OTTFVd05WQlRWVEI2Vlc1R1lXRlZlRVJXUm1odlVWUlpNRkZVYUVkVk0yOHdZMnRrTUZkSVZrVmpWRW95V1cwNWFGVXlZemxRVVQwOQ==/aHR0cHM6Ly93d3cua29tcGFzLmNvbT9sZ25fbWV0aG9kPWtvbXBhc2lkJmw9Yw==?revoke=active</arg>
+<status status="PASS" start="2025-03-10T17:09:25.288950" elapsed="0.570666"/>
+</kw>
+<kw name="open">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-03-10T17:09:25.860613" level="INFO">Opening url 'https://www.kompas.com/?lgn_method=kompasid&amp;l=c'</msg>
+<arg>${element}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-03-10T17:09:25.860613" elapsed="3.172260"/>
+</kw>
+<arg>https://www.kompas.com/?lgn_method=kompasid&amp;l=c</arg>
+<status status="PASS" start="2025-03-10T17:09:25.859616" elapsed="3.174254"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-10T17:09:29.034869" elapsed="2.769978"/>
+</kw>
+<status status="PASS" start="2025-03-10T17:07:47.149439" elapsed="104.656370"/>
+</test>
+<status status="PASS" start="2025-03-10T17:07:43.596265" elapsed="108.212570"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="LoginKompas" id="s1" pass="1" fail="0" skip="0">LoginKompas</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
